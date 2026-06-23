@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manav Khan Photography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><script>
+function openLightbox(src){
+    document.getElementById("lightbox").style.display="flex";
+    document.getElementById("lightbox-img").src=src;
+}
+
+function closeLightbox(){
+    document.getElementById("lightbox").style.display="none";
+}
+</script>
+
+    <!-- Header -->
+    <header>
+        <h1 style="font-size: 18px;">MANAV KHAN</h1>
+        <h1 style="font-size: 30px;">PHOTOGRAPHY</h1>
+        <p>HOME • ABOUT • CONTACT • INSTAGRAM • BEHENCE • FACEBOOK • LINKEDIN  </p>
+    </header>
+
+    <!-- About -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            Professional photographer and filmmaker creating
+            corporate, wedding, event, and lifestyle content.
+        </p>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+    <h2>My Work</h2>
+
+    <div class="grid">
+        <img src="images/photo1.jpg" onclick="openLightbox(this.src)">
+        <img src="images/photo2.jpg" onclick="openLightbox(this.src)">
+        <img src="images/photo3.jpg" onclick="openLightbox(this.src)">
+        <img src="images/photo4.jpg" onclick="openLightbox(this.src)">
+        <img src="images/photo5.jpg" onclick="openLightbox(this.src)">
+        <img src="images/photo6.jpg" onclick="openLightbox(this.src)">
+        <img src="images/photo6.jpg" onclick="openLightbox(this.src)">
+        <img src="images/photo6.jpg" onclick="openLightbox(this.src)">
+        <img src="images/photo6.jpg" onclick="openLightbox(this.src)">
+        <img src="images/photo6.jpg" onclick="openLightbox(this.src)">
+        <img src="images/photo6.jpg" onclick="openLightbox(this.src)">
+        <img src="images/photo6.jpg" onclick="openLightbox(this.src)">
+        <img src="images/photo6.jpg" onclick="openLightbox(this.src)">
+        <img src="images/photo6.jpg" onclick="openLightbox(this.src)">
+        <img src="images/photo6.jpg" onclick="openLightbox(this.src)">
+        <img src="images/photo6.jpg" onclick="openLightbox(this.src)">
+
+    
+    </div>
+</section>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+</div>
+
+<script>
+function changePhoto(photo) {
+    document.getElementById("mainPhoto").src = photo.src;
+}
+</script>
+
+    </body>
+</html>
